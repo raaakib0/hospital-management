@@ -39,3 +39,4 @@ class Company extends Model
         'order' => 'integer',
     ];
 }
+
