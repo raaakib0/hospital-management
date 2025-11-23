@@ -14,6 +14,8 @@ class Brandseeder extends Seeder
     public function run(): void
     {
         Brand::create([
+            'company_id'=>1,
+            'generic_id'=>1,
             'name' => fake()->name(),
             'form' => 'tablate',
             'price' => 120,

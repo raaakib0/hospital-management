@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Generic;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,8 @@ class GenericSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Generic::create([
+            'name' => fake()->word(),
+        ]);
     }
 }
