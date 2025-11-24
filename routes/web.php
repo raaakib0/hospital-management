@@ -7,3 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/generics', [GenericController::class,'index']);
+Route::get('/brand');
