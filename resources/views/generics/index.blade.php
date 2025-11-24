@@ -13,13 +13,12 @@
 </tr>
 
 @foreach ($generics as $generic)
-    
-@endforeach
 <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>{{ $generic->id }}</td>
+    <td>{{ $generic->name }}</td>
+    <td>{{ $generic->detail }}</td>
 </tr>
+@endforeach
         </table>
     </body>
 </html>
