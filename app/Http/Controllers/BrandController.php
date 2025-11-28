@@ -9,6 +9,6 @@ class BrandController extends Controller
 {
     public function brands(){
         $brands = Brand::all();
-        return view();
+        return view('brand-view',compact('brands'));
     }
 }
