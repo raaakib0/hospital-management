@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 @extends('layouts.app')
+
 <head>
     <meta charset="UTF-8">
-@section('title', 'Generics List')
+    @section('title', 'Generics List')
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +25,7 @@
             background: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
         }
 
         table {
@@ -34,7 +35,8 @@
             overflow: hidden;
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px 14px;
             text-align: left;
         }
@@ -55,34 +57,34 @@
     </style>
 </head>
 @section('content')
-    
-<body>
 
-    <h1>All Generic Data</h1>
+    <body>
 
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Generic Name</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
+        <h1>All Generic Data</h1>
 
-            <tbody>
-                @foreach ($generics as $generic)
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{{ $generic->id }}</td>
-                        <td>{{ $generic->name }}</td>
-                        <td>{{ $generic->detail }}</td>
+                        <th>ID</th>
+                        <th>Generic Name</th>
+                        <th>Details</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+                </thead>
 
-</body>
+                <tbody>
+                    @foreach ($generics as $generic)
+                        <tr>
+                            <td>{{ $generic->id }}</td>
+                            <td>{{ $generic->name }}</td>
+                            <td>{{ $generic->detail }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+    </body>
 @endsection
 
 </html>
