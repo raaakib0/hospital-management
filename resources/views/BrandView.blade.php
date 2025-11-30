@@ -53,7 +53,9 @@
         }
     </style>
 </head>
-
+@extends('layouts.app')
+@section('title','Brand List')
+@section('content')
 <body>
 
     <h1>All Brand List</h1>
@@ -81,5 +83,5 @@
     </div>
 
 </body>
-
+@endsection
 </html>

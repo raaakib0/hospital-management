@@ -1,4 +1,4 @@
-<div>
+<div class="navbar">
 <a href="/brands">Brands</a>
 <a href="/generics">Generics</a>
 <a href="/companies">Companies</a>
