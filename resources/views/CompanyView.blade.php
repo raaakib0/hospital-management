@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 @extends('layouts.app')
+
 <head>
     <meta charset="UTF-8">
-@section('title','Company List')
+    @section('title', 'Company List')
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +25,7 @@
             background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
         }
 
         table {
@@ -34,7 +35,8 @@
             overflow: hidden;
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px 15px;
             text-align: left;
         }
@@ -55,34 +57,34 @@
     </style>
 </head>
 @section('content')
-    
-<body>
 
-    <h1>All Company Data</h1>
+    <body>
 
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Company Name</th>
-                    <th>Order</th>
-                </tr>
-            </thead>
+        <h1>All Company Data</h1>
 
-            <tbody>
-                @foreach ($companys as $company)
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{{ $company->id }}</td>
-                        <td>{{ $company->name }}</td>
-                        <td>{{ $company->order }}</td>
+                        <th>ID</th>
+                        <th>Company Name</th>
+                        <th>Order</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+                </thead>
 
-</body>
+                <tbody>
+                    @foreach ($companys as $company)
+                        <tr>
+                            <td>{{ $company->id }}</td>
+                            <td>{{ $company->name }}</td>
+                            <td>{{ $company->order }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+    </body>
 @endsection
 
 </html>
