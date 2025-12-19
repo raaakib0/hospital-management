@@ -7,7 +7,6 @@
 <body>
 
     @section('content')
-        <div>
             <h1>?Dashboard?</h1>
             <hr>
             <div class="row">
@@ -23,8 +22,13 @@
                         <p>Total Companies</p>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card bg-info text-white p-3">
+                        <h1>{{ $genericCount }}</h1>
+                        <p>Total Generics</p>
+                    </div>
+                </div>
             </div>
-        </div>
     @endsection
 </body>
 
