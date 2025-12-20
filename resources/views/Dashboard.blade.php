@@ -24,10 +24,12 @@
                 </a>
             </div>
             <div class="col-md-4">
+                <a href="/generics" class="text-decoration-none">
                 <div class="card bg-info text-white p-3">
                     <h1>{{ $genericCount }}</h1>
                     <p>Total Generics</p>
                 </div>
+                </a>
             </div>
         </div>
     @endsection
