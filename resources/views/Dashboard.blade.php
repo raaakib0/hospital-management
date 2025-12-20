@@ -16,10 +16,12 @@
                 </a>
             </div>
             <div class="col-md-4">
+                <a href="/companies" class="text-decoration-none">
                 <div class="card bg-success text-white p-3">
                     <h3>{{ $companyCount }}</h3>
                     <p>Total Companies</p>
                 </div>
+                </a>
             </div>
             <div class="col-md-4">
                 <div class="card bg-info text-white p-3">
