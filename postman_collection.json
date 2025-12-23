@@ -24,9 +24,13 @@
 		{
 			"name":"Test Connection",
 			"request":{
-				
+"method": "GET",
+"header":[],
+"url": {
+	
+}
 			}
-		}
+		},
 		{
 			"name": "List Users",
 			"request": {
