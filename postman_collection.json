@@ -27,7 +27,10 @@
 "method": "GET",
 "header":[],
 "url": {
-	
+	"raw": "{{base_url}}/api/test",
+	"host":[
+		"{{base_url}}"
+	],
 }
 			}
 		},
