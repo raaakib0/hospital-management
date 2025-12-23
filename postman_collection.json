@@ -4,23 +4,29 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		// {
+		// 	"name": "Test Connection",
+		// 	"request": {
+		// 		"method": "GET",
+		// 		"header": [],
+		// 		"url": {
+		// 			"raw": "{{base_url}}/api/test",
+		// 			"host": [
+		// 				"{{base_url}}"
+		// 			],
+		// 			"path": [
+		// 				"api",
+		// 				"test"
+		// 			]
+		// 		}
+		// 	}
+		// },
 		{
-			"name": "Test Connection",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/api/test",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"test"
-					]
-				}
+			"name":"Test Connection",
+			"request":{
+				
 			}
-		},
+		}
 		{
 			"name": "List Users",
 			"request": {
