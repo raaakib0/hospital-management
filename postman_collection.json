@@ -31,7 +31,9 @@
         {
             "name": "List Users",
             "request": {
-                
+                "method": "GET",
+                "header":[],
+                "url":{}
             }
         }
         {
