@@ -33,9 +33,13 @@
             "request": {
                 "method": "GET",
                 "header":[],
-                "url":{}
+                "url":{
+                    "raw": "{{base_url}}/api/users",
+                    "host": ["{{base_url}}"],
+                    "path":["api","users"] 
+                }
             }
-        }
+        },
         {
             "name": "Create User",
             "request": {
