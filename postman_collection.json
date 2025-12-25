@@ -16,18 +16,6 @@
                 }
             }
         },
-        // {
-        //     "name": "List Users",
-        //     "request": {
-        //         "method": "GET",
-        //         "header": [],
-        //         "url": {
-        //             "raw": "{{base_url}}/api/users",
-        //             "host": ["{{base_url}}"],
-        //             "path": ["api", "users"]
-        //         }
-        //     }
-        // },
         {
             "name": "List Users",
             "request": {
@@ -40,25 +28,31 @@
                 }
             }
         },
+        // {
+        //     "name": "Create User",
+        //     "request": {
+        //         "method": "POST",
+        //         "header": [],
+        //         "body": {
+        //             "mode": "raw",
+        //             "raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"password\": \"secret\"\n}",
+        //             "options": {
+        //                 "raw": {
+        //                     "language": "json"
+        //                 }
+        //             }
+        //         },
+        //         "url": {
+        //             "raw": "{{base_url}}/api/users",
+        //             "host": ["{{base_url}}"],
+        //             "path": ["api", "users"]
+        //         }
+        //     }
+        // }
         {
             "name": "Create User",
-            "request": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                    "mode": "raw",
-                    "raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"password\": \"secret\"\n}",
-                    "options": {
-                        "raw": {
-                            "language": "json"
-                        }
-                    }
-                },
-                "url": {
-                    "raw": "{{base_url}}/api/users",
-                    "host": ["{{base_url}}"],
-                    "path": ["api", "users"]
-                }
+            "request":{
+                
             }
         }
     ],
