@@ -81,7 +81,11 @@
                         </tr>
                     @endforeach --}}
                     @foreach ($brands as $brand)
-                    
+                    <tr>
+                        <td>{{ $brand->id }}</td>
+                        <td>{{ $brand->name }}</td>
+                        <td>{{ number_format($brand->price) }}</td>
+                    </tr>
                     @endforeach
                 </tbody>
             </table>
