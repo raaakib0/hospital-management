@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
-    public function company(){
-$companys = Company::all();
-return view('CompanyView', compact('companys'));
+    public function company()
+    {
+        $companys = Company::all();
+        return view('CompanyView', compact('companys'));
     }
 }
