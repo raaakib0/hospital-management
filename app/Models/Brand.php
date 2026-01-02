@@ -23,12 +23,14 @@ class Brand extends Model
         'order',
     ];
 
-    protected $casts = [
-        'company_id' => 'integer',
-        'generic_id' => 'integer',
-        'order' => 'integer',
-    ];
-
+    // protected $casts = [
+    //     'company_id' => 'integer',
+    //     'generic_id' => 'integer',
+    //     'order' => 'integer',
+    // ];
+protected $casts = [
+    
+];
     public function scopeApiFilter($query, $date)
     {
         return $this->filterByDate($query, $date);
