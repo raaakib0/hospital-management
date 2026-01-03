@@ -27,11 +27,6 @@ class Brand extends Model
         'generic_id' => 'integer',
         'order' => 'integer',
     ];
-    // public function scopeApiFilter($query, $date)
-    // {
-    //     return $this->filterByDate($query, $date);
-    // }
-
     public function scopeApiFilter($query, $date){
         return $this->filterByDate($query,$date);
     }
