@@ -32,13 +32,14 @@ class Brand extends Model
     }
     public function scopeFilter($query, $search, $company_id, $generic_id)
     {
-        return $query->when($search, function ($query, $search) {
-            $query->where('name', 'like', '%' . $search . '%');
-        })->when($company_id, function ($query) use ($company_id) {
-            $query->where('company_id', $company_id);
-        })->when($generic_id, function ($query) use ($generic_id) {
-            $query->where('generic_id', $generic_id);
-        });
+        // return $query->when($search, function ($query, $search) {
+        //     $query->where('name', 'like', '%' . $search . '%');
+        // })->when($company_id, function ($query) use ($company_id) {
+        //     $query->where('company_id', $company_id);
+        // })->when($generic_id, function ($query) use ($generic_id) {
+        //     $query->where('generic_id', $generic_id);
+        // });
+        return $query->when($search, function($query, $search){});
     }
 
     public function company(): BelongsTo
