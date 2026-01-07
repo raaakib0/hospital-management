@@ -28,7 +28,9 @@ class Company extends Model
         // return $query->when($search, function ($query, $search) {
         //     $query->where('name', 'like', '%' . $search . '%');
         // });
-        return $query->when($search,function(){});
+        return $query->when($search,function($query,$search){
+            $query->where('name','like','%'.$search.'%');
+        });
     }
 
     public function brands(): HasMany
