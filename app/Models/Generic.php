@@ -23,11 +23,8 @@ class Generic extends Model
     }
     public function scopeFilter($query, $search)
     {
-        // return $query->when($search, function ($query, $search) {
-        //     $query->where('name', 'like', '%' . $search . '%');
-        // });
-        return $query->when($search,function($query,$search){
-$query->where('name','like','%' .$search . '%');
+        return $query->when($search, function ($query, $search) {
+            $query->where('name', 'like', '%' . $search . '%');
         });
     }
 
