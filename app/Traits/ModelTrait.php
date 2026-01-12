@@ -15,9 +15,6 @@ trait ModelTrait
 
     public function searchByCoumn($query, $search)
     {
-        // return $query->when($search, function ($query, $search) {
-        //     $query->where('name', 'like', '%'.$search.'%');
-        // });
         return $query->when($search, function($query, $search){
             $query->where('name','like', '%' .$search. '%');
         });
